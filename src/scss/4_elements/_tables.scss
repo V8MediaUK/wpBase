@@ -1,0 +1,9 @@
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: calc(var(--spaceing-0_5) - 1px);
+  border: 1px solid;
+}

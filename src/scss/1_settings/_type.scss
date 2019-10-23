@@ -1,0 +1,10 @@
+//Consistent spacing values for elements
+$rhythm: 1.4rem;
+$spacing: (
+  "0_5":    $rhythm / 2,
+  "1":      $rhythm,
+  "1_5":    $rhythm * 1.5,
+  "2":      $rhythm * 2,
+  "2_5":    $rhythm * 2.5,
+  "3":      $rhythm * 3
+);

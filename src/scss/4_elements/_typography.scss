@@ -1,0 +1,76 @@
+@include fontFace(
+  $fontFamily: 'OpenSans',
+  $src: '../fonts/OpenSans/',
+  $fonts: (
+    300: (
+        normal: "OpenSans-Light",
+        italic: "OpenSans-LightItalic",
+    ),
+    400: (
+      normal: "OpenSans-Regular",
+      italic: "OpenSans-Italic",
+    ),
+    700: (
+      normal: "OpenSans-Bold",
+       italic: "OpenSans-BoldItalic",
+    )
+  ),
+  $display: optional
+);
+
+body {
+    font-family: 'OpenSans', sans-serif;
+    color: var(--text-colour);
+
+    font-size: 1rem;
+    line-height: var(--spaceing-1);
+}
+
+main {
+  // Demonstrate the vertical rhythm at 12px
+  background-image: linear-gradient(#eee 1px, transparent 1px);
+  background-size: 100% var(--spaceing-1);
+}
+
+p {
+  margin: var(--spaceing-1) 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: var(--spaceing-2);
+  margin-bottom: var(--spaceing-1);
+}
+
+h1 {
+  font-size: 2.488rem;
+  line-height: var(--spaceing-3);
+}
+
+h2 {
+  font-size: 2.074rem;
+  line-height: var(--spaceing-2);
+}
+
+h3 {
+  font-size: 1.728rem;
+  line-height: var(--spaceing-2);
+}
+
+h4 {
+  font-size: 1.44rem;
+  line-height: var(--spaceing-2);
+}
+
+h5 {
+  font-size: 1.2rem;
+  line-height: var(--spaceing-1);
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: var(--spaceing-1);
+}
+
+small, .text_small {
+  font-size: 0.833rem;
+}

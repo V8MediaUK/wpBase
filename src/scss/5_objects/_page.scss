@@ -1,7 +1,16 @@
+//Body Colours
 body {
   background-color: var(--background-colour);
   color: var(--text-colour);
 
+  @media screen and (prefers-color-scheme: dark) {
+    --text-colour: var(--monotones_base0);
+    --background-colour: var(--monotones_base03);
+  }
+}
+
+//Body Layout
+body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto) 1fr repeat(2, auto);
@@ -47,12 +56,12 @@ body.no-sidebar {
 
 .site-main {
   grid-area: main;
-  padding: var(--site-padding);
+  padding: 0 var(--site-padding);
 }
 
 .widget-area {
   grid-area: sidebar;
-  padding: var(--site-padding);
+  padding: 0 var(--site-padding);
 }
 
 .site-footer {

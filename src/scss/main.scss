@@ -6,6 +6,7 @@
 */
 @import "1_settings/colours";
 @import "1_settings/breakpoints";
+@import "1_settings/type";
 
 /*
  * -- Tools --
@@ -24,7 +25,6 @@
 @import "3_generic/normalize";
 @import "3_generic/box-sizing";
 @import "3_generic/variables";
-@import "3_generic/typography";
 
 /*
  * -- Elements --
@@ -32,7 +32,11 @@
  * Base HTML Elements before classes and more specific overrides.
  *
 */
+@import "4_elements/typography";
 @import "4_elements/links";
+@import "4_elements/lists";
+@import "4_elements/tables";
+@import "4_elements/quotes";
 
 /*
  * -- Objects --
