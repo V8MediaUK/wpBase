@@ -4,6 +4,19 @@ table {
 }
 
 th, td {
-  padding: calc(var(--spaceing-0_5) - 1px);
+  padding: var(--spaceing-0_5);
+  line-height: calc(var(--spaceing-1) - 1px);
   border: 1px solid;
+}
+
+tbody tr:first-of-type {
+  th, td {
+    padding-top: calc(var(--spaceing-0_5) - 1px);
+  }
+}
+
+tbody tr:last-of-type {
+  th, td {
+    padding-bottom: calc(var(--spaceing-0_5) - 1px);
+  }
 }

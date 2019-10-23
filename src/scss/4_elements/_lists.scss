@@ -1,3 +1,7 @@
 ol, ul {
-  margin: 0 0 var(--spaceing-1);
+  margin: var(--spaceing-1) 0;
+
+  & ol, & ul {
+    margin: 0;
+  }
 }
