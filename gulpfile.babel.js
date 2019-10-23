@@ -106,7 +106,7 @@ function pot() {
   return gulp.src("**/*.php")
   .pipe(
       wpPot({
-        domain: "_themename",
+        domain: "wpbase",
         package: info.name
       })
     )
