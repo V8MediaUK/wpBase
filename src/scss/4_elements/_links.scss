@@ -1,0 +1,10 @@
+a {
+  color: var(--main-colour);
+  text-decoration: underline;
+
+  transition: color 0.2s ease;
+
+  &:hover, &:focus {
+    color: var(--contrast-colour);
+  }
+}

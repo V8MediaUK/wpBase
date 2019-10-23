@@ -1,0 +1,24 @@
+@include fontFace(
+  $fontFamily: 'OpenSans',
+  $src: '../fonts/OpenSans/',
+  $fonts: (
+    300: (
+        normal: "OpenSans-Light",
+        italic: "OpenSans-LightItalic",
+    ),
+    400: (
+      normal: "OpenSans-Regular",
+      italic: "OpenSans-Italic",
+    ),
+    700: (
+      normal: "OpenSans-Bold",
+       italic: "OpenSans-BoldItalic",
+    )
+  ),
+  $display: optional
+);
+
+body {
+    font-family: 'OpenSans', sans-serif;
+    color: var(--text-colour);
+}

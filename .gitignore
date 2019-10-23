@@ -1,0 +1,4 @@
+#ignore node modules (can be installed from package.json)
+node_modules
+dist
+bundled

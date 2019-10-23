@@ -1,0 +1,20 @@
+// Color palette
+$colours: (
+    "primary": (
+        "base": #313639,
+    ),
+    "secondary": (
+        "base": #ff3639
+    ),
+    "grey": (
+        "black":                #000000,
+        "dark":                 #404040,
+        "mid":                  #808080,
+        "light":                #C0C0C0,
+        "white":                #ffffff
+    )
+);
+
+@function getcolour($colour, $tone: base) {
+    @return map-get(map-get($colours, $colour), $tone);
+}

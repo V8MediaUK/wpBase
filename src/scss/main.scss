@@ -1,0 +1,61 @@
+/*
+ * -- Settings --
+ * Path: 1_settings
+ * Constants (sass variables) for other layers.
+ *
+*/
+@import "1_settings/colours";
+@import "1_settings/breakpoints";
+
+/*
+ * -- Tools --
+ * Path: 2_tools
+ * Mixins Extends etc.
+ *
+*/
+@import "2_tools/mixins";
+
+/*
+ * -- Generic --
+ * Path: 3_generic
+ * Normalize and Resets
+ *
+*/
+@import "3_generic/normalize";
+@import "3_generic/box-sizing";
+@import "3_generic/variables";
+@import "3_generic/typography";
+
+/*
+ * -- Elements --
+ * Path: 4_elements
+ * Base HTML Elements before classes and more specific overrides.
+ *
+*/
+@import "4_elements/links";
+
+/*
+ * -- Objects --
+ * Path: 5_objects
+ * Container styles and page layout.
+ *
+*/
+@import "5_objects/page";
+@import "5_objects/a11y";
+@import "5_objects/header";
+@import "5_objects/footer";
+
+/*
+ * -- Components --
+ * Path: 6_components
+ * Reusable components - e.g. Accordions, CTA's etc.
+ *
+*/
+@import "6_components/navigation";
+
+/*
+ * -- Trumps --
+ * Path: 7_trumps
+ * Dirty hacks go here and here only.
+ *
+*/

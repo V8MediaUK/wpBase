@@ -1,0 +1,8 @@
+:root {
+  --site-padding: #{$site-padding-small};
+
+  --main-colour: #{getcolour("primary")};
+  --contrast-colour: #{getcolour("secondary")};
+  --background-colour: #{getcolour("grey", "white")};
+  --text-colour: #{getcolour("grey", "black")};
+}
