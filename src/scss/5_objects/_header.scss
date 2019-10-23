@@ -1,8 +1,6 @@
 .site-header {
-  --text-colour: #{getcolour("grey", "white")};
-  --background-colour: #{getcolour("primary")};
-  --main-colour: #{getcolour("grey", "white")};
-  --contrast-colour: #{getcolour("secondary")};
+  --text-colour: var(--monotones_base0);;
+  --background-colour: var(--monotones_base03);;
 
   background-color: var(--background-colour);
   color: var(--text-colour);

@@ -1,4 +1,7 @@
 body {
+  background-color: var(--background-colour);
+  color: var(--text-colour);
+
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto) 1fr repeat(2, auto);
