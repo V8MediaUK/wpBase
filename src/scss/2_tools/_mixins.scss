@@ -38,3 +38,8 @@
     }
   }
 }
+
+@mixin type-setting($level: 0) {
+  font-size: map-deep-get($type-scale, $level, size);
+  line-height: map-deep-get($type-scale, $level, line-height);
+}

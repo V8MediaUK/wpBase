@@ -13,9 +13,5 @@
   --main-colour:        var(--colours_cyan);
   --contrast-colour:    var(--colours_magenta);
 
-  //Rhythm
-  @each $space, $value in $spacing {
-    --spaceing-#{$space}:   #{$value};
-  }
-  --site-padding: var(--spaceing-1);
+  --site-padding:       #{$base-line-height};
 }

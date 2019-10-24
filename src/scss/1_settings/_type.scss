@@ -1,10 +1,42 @@
 //Consistent spacing values for elements
-$rhythm: 1.5rem;
-$spacing: (
-  "0_5":    $rhythm / 2,
-  "1":      $rhythm,
-  "1_5":    $rhythm * 1.5,
-  "2":      $rhythm * 2,
-  "2_5":    $rhythm * 2.5,
-  "3":      $rhythm * 3
+$base-font-size: 1rem;
+$base-line-height: $base-font-size * 1.5;
+
+$type-scale: (
+  -2: (
+    size:         0.8542rem,
+    line-height:  $base-line-height
+  ),
+  -1: (
+    size:         0.9375rem,
+    line-height:  $base-line-height
+  ),
+  0: (
+    size:         1rem,
+    line-height:  $base-line-height
+  ),
+  1: (
+    size:         1rem,
+    line-height:  $base-line-height
+  ),
+  2: (
+    size:         1.1042rem,
+    line-height:  $base-line-height
+  ),
+  3: (
+    size:         1.1875rem,
+    line-height:  $base-line-height
+  ),
+  4: (
+    size:         1.2917rem,
+    line-height:  $base-line-height
+  ),
+  5: (
+    size:         1.3958rem,
+    line-height:  $base-line-height
+  ),
+  6: (
+    size:         3.9167rem,
+    line-height:  $base-line-height * 3
+  )
 );

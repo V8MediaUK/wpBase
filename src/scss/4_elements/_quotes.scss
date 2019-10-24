@@ -1,7 +1,7 @@
 blockquote {
-  margin: var(--spaceing-1);
+  margin: $base-line-height;
 }
 
 pre {
-  margin: var(--spaceing-1) 0;
+  margin: $base-line-height 0;
 }
