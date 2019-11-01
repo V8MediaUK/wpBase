@@ -3,6 +3,8 @@ body {
   background-color: var(--background-colour);
   color: var(--text-colour);
 
+  overflow-x: hidden;
+
   @media screen and (prefers-color-scheme: dark) {
     --text-colour: var(--monotones_base0);
     --background-colour: var(--monotones_base03);
@@ -15,8 +17,8 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto) 1fr repeat(2, auto);
   grid-template-areas:
-    "header"
     "nav"
+    "header"
     "main"
     "sidebar"
     "footer"
@@ -37,11 +39,20 @@ body.no-sidebar {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto) 1fr rauto;
   grid-template-areas:
+    "nav"
+    "header"
+    "main"
+    "footer"
+  ;
+
+  @media screen and (min-width: $breakpoint-large) {
+    grid-template-areas:
     "header"
     "nav"
     "main"
     "footer"
   ;
+  }
 }
 
 .site-header {
@@ -51,7 +62,7 @@ body.no-sidebar {
 
 .main-navigation {
   grid-area: nav;
-  padding: var(--site-padding);
+  padding: calc(var(--site-padding) / 2) var(--site-padding);
 }
 
 .site-main {

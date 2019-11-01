@@ -65,7 +65,7 @@ h6 {
   @include type-setting(1);
 }
 
-small, {
+small {
   @include type-setting(-1);
 }
 
