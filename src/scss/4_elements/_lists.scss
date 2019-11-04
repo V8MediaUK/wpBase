@@ -1,5 +1,5 @@
 ol, ul {
-  margin: var(--spaceing-1) 0;
+    margin: $base-line-height 0;
 
   & ol, & ul {
     margin: 0;

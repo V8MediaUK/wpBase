@@ -1,0 +1,12 @@
+form {
+    margin: $base-line-height 0;
+}
+
+input[type="submit"], button {
+    line-height: calc(#{$base-line-height} - 4px);
+    padding: ($base-line-height / 4) ($base-line-height / 2);
+    border: 2px solid;
+    background: transparent;
+
+    cursor: pointer;
+}

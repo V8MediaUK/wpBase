@@ -1,0 +1,87 @@
+.main-navigation {
+    position: sticky;
+    top: 0;
+
+    --text-colour: var(--main-colour);
+    --background-colour: var(--monotones_base03);
+
+    background-color: var(--background-colour);
+    color: var(--text-colour);
+
+    @media screen and (hover: hover) and (min-width: $breakpoint-large) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.main-menu-container {
+    @include position(fixed, $base-line-height * 2.5, 0, 0, 0);
+
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+
+    background-color: var(--background-colour);
+    color: var(--text-colour);
+
+    overflow-y: auto;
+
+    @media screen and (hover: hover) and (min-width: $breakpoint-large) {
+        position: static;
+
+        transform: none;
+        transition: none;
+
+        overflow-y: visible;
+    }
+}
+
+.main-navigation.toggled .main-menu-container {
+    transform: translateX(0%);
+}
+
+.main-menu {
+    @include noList();
+
+    @media screen and (hover: hover) and (min-width: $breakpoint-large) {
+        @include displayFlex();
+    }
+}
+
+//First level submenus form the mega menu
+.main-menu > .menu-item > .sub-menu {
+    @include noList();
+    @include type-setting(-1);
+
+    @media screen and (hover: hover) and (min-width: $breakpoint-large) {
+        @include position(absolute, $top: 100%, $left: 0, $right: 0);
+        @include displayFlex();
+
+        background: var(--background-colour);
+
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+    .main-navigation .menu-item:hover .sub-menu, .main-navigation .menu-item:focus-within .sub-menu {
+        @media screen and (hover: hover) and (min-width: $breakpoint-large) {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+
+.main-navigation .menu-item > a {
+    display: block;
+    padding: $base-line-height /2 $base-line-height;
+    text-decoration: none;
+}
+
+//Hide menu toggle on large screens with a mouse.
+.menu-toggle {
+    color: var(--main-colour);
+
+    @media screen and (hover: hover) and (min-width: $breakpoint-large) {
+        display: none;
+    }
+}

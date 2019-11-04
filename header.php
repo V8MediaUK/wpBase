@@ -42,14 +42,15 @@
 				<p class="site-description"><?php echo $wpbase_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'wpbase' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+	<nav id="site-navigation" class="main-navigation">
+		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'wpbase' ); ?></button>
+		<?php
+		wp_nav_menu( array(
+			'theme_location' 	=> 'menu-1',
+			'menu_id'        	=> 'primary-menu',
+			'container_class'	=> 'main-menu-container',
+			'menu_class'	 	=> 'main-menu'
+		) );
+		?>
+	</nav><!-- #site-navigation -->
