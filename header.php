@@ -21,7 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wpbase' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'wpbase' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
