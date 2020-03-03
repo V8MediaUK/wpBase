@@ -6,6 +6,8 @@ input, button, textarea {
     line-height: $base-line-height;
     padding: (calc(#{$base-line-height / 4} - 2px) calc(#{$base-line-height / 2} - 2px));
     border: 2px solid;
+    width: 100%;
+
     background: transparent;
 
     cursor: pointer;
@@ -28,6 +30,8 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 input[type="submit"], button {
+  width: auto;
+
   &:hover {
     color: var(--main-colour);
   }
